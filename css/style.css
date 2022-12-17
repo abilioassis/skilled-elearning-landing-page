@@ -1,0 +1,395 @@
+:root {
+  /* Global definitions */
+  --desktop-width: 1440px;
+  --tablet-width: 768px;
+  --mobile-width: 375px;
+  --font-medium: 500;
+  --font-bold: 700;
+  --font-extra-bold: 800;
+}
+
+* {
+  /* Global reset */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  /*
+  Default font size in Chrome, Edge and Firefox: 16px  
+  62.5% x 16px = 10px
+  */
+  font-size: 62.5%;
+  background: #c3c3c3;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+  background: #FFFFFF;
+  max-width: var(--desktop-width);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  /* For the hero image to be absolutely positioned */
+  position: relative;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  /* Ensures minimal spacing on the sides when screen width is reduced */
+  padding: 2.4rem;
+}
+
+header .inner-box,
+footer .inner-box {
+  max-width: 111rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+.hero {
+  padding: 0 2.4rem;
+}
+
+.hero .inner-box {
+  margin: 0 auto;
+  max-width: 111rem;
+}
+
+.hero article {
+  margin-top: 17.2rem;
+  width: 45.7rem;
+}
+
+.hero article h2 {
+  font-size: 5.6rem;
+  font-weight: var(--font-bold);
+  color: #13183F;
+}
+
+.hero article p {
+  margin-top: 2.9rem;
+  font-weight: var(--font-medium);
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: #83869A;
+  width: 44.5rem;
+}
+
+.hero article a {
+  margin-top: 4rem;
+}
+
+.hero img {
+  width: 70.7rem;
+  height: 76.8rem;
+  object-fit: none;
+  object-position: left bottom;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.courses {
+  padding: 0 2.4rem;
+  margin-top: 10rem;
+}
+
+.courses .inner-box {
+  margin: 0 auto;
+  max-width: 111rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5.6rem 3rem;
+  background: linear-gradient(#FFFFFF, #F0F1FF);
+}
+
+.courses .title {
+  background: linear-gradient(#FF6F48, #F02AA6);
+  border-radius: 1.5rem;
+  padding: 6.4rem 3.2rem;
+}
+
+.courses .title h3 {
+  color: #FFFFFF;
+  font-size: 3.2rem ;
+  line-height: 4rem;
+  font-weight: var(--font-extra-bold);
+}
+
+.courses .course {
+  background: #FFFFFF;
+  border-radius: 1.5rem;
+}
+
+.course svg,
+.course img {
+  margin-top: -3.2rem;
+  margin-left: 3.2rem;
+}
+
+.course .box {
+  padding: 3.2rem 3.2rem 4rem;
+}
+
+.course .description {
+  height: 21.8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.course h3 {
+  font-size: 2.4rem;
+  font-weight: var(--font-extra-bold);
+  color: #13183F;
+}
+
+.course p {
+  margin-top: 2.4rem;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  font-weight: var(--font-medium);
+  color: #83869A;
+}
+
+.course a {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  font-weight: var(--font-bold);
+  color: #F74780;
+  /* The automatic top margin occupies all free space in the flex container. */
+  margin-top: auto;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 0 2.4rem;
+  height: 12rem;
+  background: #13183F;
+}
+
+/* Utility classes */
+
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 2.8rem;
+  text-decoration: none;
+  font-weight: var(--font-bold);
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: #FFFFFF;
+}
+
+.btn-1 {
+  padding: 1.4rem 3.2rem;
+  background: #13183F;
+  /* I bring the button to the front of the image so I can fire the :hover event */
+  z-index: 1;
+}
+
+.btn-1:hover {
+  background: #666CA3;
+}
+
+.btn-2 {
+  padding: 1.9rem 3.2rem 1.6rem;
+  background: linear-gradient(#F02AA6, #FF6F48);
+}
+
+.btn-2:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+}
+
+.btn-3 {
+  padding: 1.4rem 3.2rem;
+  background: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+}
+
+.btn-3:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+}
+
+/* Two column grid */
+@media (max-width: 1204px) {
+  .courses .inner-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Adjust the desktop image */
+@media (max-width: 1140px) {
+  .hero img {
+    width: 62.6rem;
+    height: 81.2rem;
+  }
+}
+
+/* Adjust the tablet image */
+@media (max-width: 1045px) {
+  .hero img {
+    width: 47.1rem;
+    height: 71.5rem;
+  }
+}
+
+/* Tablet */
+@media (max-width: 890px) {
+  body {
+    max-width: var(--tablet-width);
+  }
+
+  header {
+    padding: 2.4rem 0 0;
+  }
+
+  header .inner-box,
+  footer .inner-box {
+    max-width: 68.9rem;
+  }
+
+  .hero article {
+    margin-top: 9.9rem;
+    width: 39.8rem;
+  }
+  
+  .hero article h2 {
+    font-size: 4rem;
+  }
+
+  .hero article p {
+    margin-top: 2.5rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    width: 39.8rem;
+  }
+
+  .hero article a {
+    margin-top: 2.4rem;
+  }
+
+  .hero img {
+    width: 39.7rem;
+    height: 63.3rem;
+  }
+
+  .courses {
+    margin-top: 18rem;
+  }
+
+  .courses .inner-box {
+    max-width: 68.9rem;
+    gap: 5.6rem 1rem;
+  }
+
+  .courses .title {
+    border-radius: 1rem;
+    padding: 5.6rem 3.2rem;
+  }
+
+  .courses .title h3 {
+    font-size: 2.4rem ;
+    line-height: 3.2rem;
+  }
+
+  .courses .course {
+    border-radius: 1rem;
+  }
+
+  .course .box {
+    padding: 2.8rem 2.2rem 3.2rem 3.2rem;
+  }
+
+  .course .description {
+    height: 17.1rem;
+  }
+
+  .course h3 {
+    font-size: 2rem;
+  }
+
+  .course p {
+    margin-top: 1.6rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+
+  /* Mobile */
+  @media (max-width: 730px) {
+    body {
+      max-width: var(--mobile-width);
+    }
+
+    header {
+      padding: 1.6rem;
+    }
+
+    .btn {
+      font-size: 1.6rem;
+    }
+
+    .btn-1 {
+      padding: 0.9rem 2.4rem 1.1rem;
+    }
+
+    .hero {
+      padding: 0 1.6rem;
+    }
+
+    .hero .inner-box {
+      width: 100%;
+    }
+    .hero article {
+      margin-top: 3.8rem;
+      width: 100%;
+    }
+
+    .hero article p {
+      width: 100%;
+    }
+
+    .hero img {
+      position: static;
+      max-width: 100%;
+      object-position: center top;
+      height: 32.4rem;
+      margin-top: 2.5rem;
+    }
+
+    .courses {
+      padding: 0 1.6rem 8rem;
+      margin-top: 6rem;
+    }
+
+    .courses .inner-box {
+      grid-template-columns: 1fr;
+      gap: 9.6rem;
+    }
+
+    .courses .title {
+      padding: 2.4rem 2.8rem;
+    }
+
+    .course svg,
+    .course img {
+      margin-left: 0;
+    }
+
+    .course .box {
+      padding: 1.4rem 0 0;
+    }
+
+    .btn-3 {
+      padding: 1.2rem 2.4rem;
+    }
+
+  }
+
+
+
+}

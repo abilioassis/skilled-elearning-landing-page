@@ -17,8 +17,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://unique-donut-d1413e.netlify.app/)
+- Live Site URL: [Netlify](https://unique-donut-d1413e.netlify.app/)
 
 ## My process
 
@@ -32,7 +32,7 @@ Users should be able to:
 
 ### What I learned
 
-Having finished the desktop version, let me make some remarks about the challenges faced and lessons learned.
+Let me make some remarks about the challenges faced and lessons learned.
 
 - It took me a few days trying to dissect the design in Figma and plan the solution using pencil and paper. I produced this schematic as a result of that.
 ![](design/design-planning.jpeg)

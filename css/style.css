@@ -241,7 +241,7 @@ footer {
 /* Tablet */
 @media (max-width: 890px) {
   body {
-    max-width: var(--tablet-width);
+    /* max-width: var(--tablet-width); */
   }
 
   header {
@@ -322,7 +322,7 @@ footer {
   /* Mobile */
   @media (max-width: 730px) {
     body {
-      max-width: var(--mobile-width);
+      /* max-width: var(--mobile-width); */
     }
 
     header {

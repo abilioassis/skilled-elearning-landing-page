@@ -240,10 +240,6 @@ footer {
 
 /* Tablet */
 @media (max-width: 890px) {
-  body {
-    /* max-width: var(--tablet-width); */
-  }
-
   header {
     padding: 2.4rem 0 0;
   }
@@ -321,10 +317,6 @@ footer {
 
   /* Mobile */
   @media (max-width: 730px) {
-    body {
-      /* max-width: var(--mobile-width); */
-    }
-
     header {
       padding: 1.6rem;
     }

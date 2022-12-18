@@ -1,8 +1,6 @@
 :root {
   /* Global definitions */
   --desktop-width: 1440px;
-  --tablet-width: 768px;
-  --mobile-width: 375px;
   --font-medium: 500;
   --font-bold: 700;
   --font-extra-bold: 800;
@@ -379,9 +377,5 @@ footer {
     .btn-3 {
       padding: 1.2rem 2.4rem;
     }
-
   }
-
-
-
 }

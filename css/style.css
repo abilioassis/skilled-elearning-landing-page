@@ -59,11 +59,12 @@ footer .inner-box {
 }
 
 .hero article {
-  margin-top: 17.2rem;
+  /* margin-top: 17.2rem; */
   width: 45.7rem;
 }
 
 .hero article h2 {
+  margin-top: 172px;
   font-size: 5.6rem;
   font-weight: 800;
   color: #13183F;

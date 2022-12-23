@@ -37,7 +37,7 @@ header {
   display: flex;
   justify-content: center;
   /* Ensures minimal spacing on the sides when screen width is reduced */
-  padding: 2.4rem;
+  padding: 2.4rem 2.4rem 0;
 }
 
 header .inner-box,
@@ -68,6 +68,8 @@ footer .inner-box {
   font-size: 5.6rem;
   font-weight: 800;
   color: #13183F;
+  line-height: 70.56px;
+  height: 143px;
 }
 
 .hero article p {

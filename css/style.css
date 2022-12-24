@@ -164,6 +164,7 @@ footer .inner-box {
   line-height: 2.8rem;
   font-weight: var(--font-bold);
   color: #F74780;
+  text-decoration: none;
   /* The automatic top margin occupies all free space in the flex container. */
   margin-top: auto;
 }

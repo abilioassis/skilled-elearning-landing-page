@@ -170,6 +170,7 @@ footer .inner-box {
 }
 
 footer {
+  margin-top: 14rem;
   display: flex;
   justify-content: center;
   padding: 0 2.4rem;

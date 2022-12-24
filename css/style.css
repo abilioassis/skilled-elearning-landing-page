@@ -59,7 +59,6 @@ footer .inner-box {
 }
 
 .hero article {
-  /* margin-top: 17.2rem; */
   width: 45.7rem;
 }
 
@@ -96,8 +95,8 @@ footer .inner-box {
 }
 
 .courses {
-  /* padding: 0 2.4rem; */
   margin-top: 22.6rem;
+  padding-bottom: 14rem;
   background: linear-gradient(#FFFFFF, #F0F1FF);
 }
 
@@ -170,7 +169,6 @@ footer .inner-box {
 }
 
 footer {
-  margin-top: 14rem;
   display: flex;
   justify-content: center;
   padding: 0 2.4rem;

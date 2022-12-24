@@ -97,11 +97,11 @@ footer .inner-box {
 
 .courses {
   padding: 0 2.4rem;
-  margin-top: 253px;
+  margin-top: 250px;
 }
 
 .courses .inner-box {
-  margin: 0 auto3
+  margin: 0 auto0
   max-width: 111rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);

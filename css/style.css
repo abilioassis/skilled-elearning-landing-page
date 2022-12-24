@@ -105,7 +105,7 @@ footer .inner-box {
   max-width: 111rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 8rem 3rem;
+  gap: 9rem 3rem;
 }
 
 .courses .title {

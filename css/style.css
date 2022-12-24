@@ -96,8 +96,9 @@ footer .inner-box {
 }
 
 .courses {
-  padding: 0 2.4rem;
+  /* padding: 0 2.4rem; */
   margin-top: 22.6rem;
+  background: linear-gradient(#FFFFFF, #F0F1FF);
 }
 
 .courses .inner-box {
@@ -106,7 +107,6 @@ footer .inner-box {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 5.6rem 3rem;
-  background: linear-gradient(#FFFFFF, #F0F1FF);
 }
 
 .courses .title {
